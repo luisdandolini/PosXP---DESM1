@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API Covid-19</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <header>
+      <section class="main">
+        <img
+          src="./images/covid3d.png"
+          alt="Imagem do vírus em 3D"
+          class="imagem__virus"
+        />
+        <h1>Situação da COVID-19</h1>
+        <p>
+          À medida que a COVID-19 continua a impactar o mundo, manter-se
+          informado é a nossa principal arma contra o vírus.
+        </p>
+        <a href="https://github.com/luisdandolini" target="_blank">
+          <img src="./images/logoXP.png" alt="Logo da XP" class="logo__xp" />
+          Por: Luís Fernando Dandolini Duarte
+        </a>
+      </section>
+      <img
+        class="imagem__grafico"
+        src="./images/covid.png"
+        alt="Imagem ilustrativa do gráfico da covid"
+      />
+    </header>
+
+    <h1>COVID-19 Data</h1>
+  
+    <div id="app">
+      <!-- <label for="country">País:</label> -->
+      <input type="text" id="country" placeholder="Insira o código do país(BRA)">
+      <!-- <label for="date">Data:</label> -->
+      <input type="date" id="date">
+      <button onclick="getData(document.getElementById('country'), document.getElementById('date'))">Buscar</button>
+  
+    </div>
+
+    <div id="result"></div>
+    
+    <footer>
+      <img src="./images/logoXP.png" alt="Logo da XP" class="logo__xp" />
+      <h4>Por: Luís Fernando Dandolini Duarte</h4>
+    </footer>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
